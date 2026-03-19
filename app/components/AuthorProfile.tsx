@@ -18,7 +18,7 @@ export default function AuthorProfile({ author }: AuthorProfileProps) {
       />
       <div>
         <p className="font-semibold text-neutral-900 dark:text-neutral-100">
-          {author.name}
+          {author.name} Sir
         </p>
         <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
           {author.bio}
