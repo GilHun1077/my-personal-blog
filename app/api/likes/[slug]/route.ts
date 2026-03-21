@@ -6,18 +6,18 @@ const likesStore: Record<string, number> = {}
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
-  const { slug } = params
+  const { slug } = await params
   const likes = likesStore[slug] ?? 0
   return NextResponse.json({ likes })
 }
 
 export async function POST(
   _req: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
-  const { slug } = params
+  const { slug } = await params
   likesStore[slug] = (likesStore[slug] ?? 0) + 1
   return NextResponse.json({ likes: likesStore[slug] })
 }
