@@ -17,6 +17,9 @@ export default function AuthorProfile({ author }: AuthorProfileProps) {
         src={avatarUrl}
         alt={name}
         className="h-14 w-14 rounded-full object-cover"
+        onError={(e) => {
+          e.currentTarget.src = '/images/avatar.svg'
+        }}
       />
       <div>
         <p className="font-semibold text-neutral-900 dark:text-neutral-100">
