@@ -102,7 +102,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
         author={{
           name: "John Doe",
           bio: "A passionate writer and developer.",
-          avatarUrl: "/images/avatar.png",
+          avatarUrl: "/images/avatar.svg",
         }}
       />
     </section>
