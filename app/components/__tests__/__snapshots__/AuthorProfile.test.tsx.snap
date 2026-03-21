@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AuthorProfile > snapshot > should match the snapshot 1`] = `
+<div
+  class="mt-12 flex items-start gap-4 border-t border-neutral-200 pt-8 dark:border-neutral-700"
+>
+  <img
+    alt="Jane Doe"
+    class="h-14 w-14 rounded-full object-cover"
+    src="https://example.com/avatar.jpg"
+  />
+  <div>
+    <p
+      class="font-semibold text-neutral-900 dark:text-neutral-100"
+    >
+      Jane Doe
+    </p>
+    <p
+      class="mt-1 text-sm text-neutral-600 dark:text-neutral-400"
+    >
+      A software engineer who loves writing.
+    </p>
+  </div>
+</div>
+`;
